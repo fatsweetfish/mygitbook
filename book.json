@@ -1,0 +1,35 @@
+{
+    "title": "Fatsweetfish's Gitbook",
+    "author": "Jane",
+    "description": "mydoc",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "styles": {
+        "website": "./styles/website.css"
+    },
+    "structure": {
+        "readme": "README.md"
+    },
+    "plugins": [
+        "-lunr",
+        "-search"
+    ],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "isShowTocTitleIcon": true
+        }
+    },
+    "links": {
+        "sidebar": {
+            "GitHub": "https://github.com/fatsweetfish"
+        }
+    },
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
+    }
+
+}
