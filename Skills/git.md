@@ -1,3 +1,5 @@
+
+
 ## Git 实用操作
 
 
@@ -389,6 +391,20 @@ $ git rebase master
   git commit -m "delete files"
   git push origin master
   ```
+
+  
+
+  若是rm删除的
+
+  ```
+  rm -rf _book
+  git commit -am "delete _book"  一定要加a
+  git push origin master
+  ```
+
+  git commit -m用于提交暂存区的文件，git commit -am用于提交跟踪过的文件
+
+  [注意]git commit -am可以写成git commit -a -m，但不能写成git commit -m -a
 
   
 
