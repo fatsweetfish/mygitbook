@@ -288,6 +288,16 @@ git fetch origin tag V1.2
 
 
 
+#### 忽略文件.gitignore
+
+```
+#
+build
+_book
+```
+
+
+
 #### **git rebase**
 
 Rebase 是合并两个分支的另一种方式。Rebase 把所有的提交压缩成一个 “patch”。然后把 patch 添加到目标分支里。和 merging 不同，rebasing 清除了历史，因为它完全是从一个分支转移到了另一个分支。在这个过程中，多余的记录被移除了。
@@ -370,7 +380,17 @@ $ git rebase master
   Merge pull request
   ```
 
+* **删除远程文件**
 
+  ```
+  git rm xxxfile
+  git rm -rf xxxdir
+  
+  git commit -m "delete files"
+  git push origin master
+  ```
+
+  
 
 ### 3.问题
 
