@@ -9,8 +9,8 @@
 #### 配置
 
 ```
-git -config --global user.name "fatsweetfish"
-git -config --global user.email "xxx@xxx.com"
+git config --global user.name "fatsweetfish"
+git config --global user.email "xxx@xxx.com"
 ```
 
 #### 创建切换分支
@@ -328,7 +328,7 @@ $ git rebase master
     git reset HEAD filename
     git reset HEAD .　　放弃所有缓存的文件
     ＃或者
-    git rm -r --cached . 
+    git rm -r --cached .  千万不要用这个命令
     ```
 
   * 已经commit
