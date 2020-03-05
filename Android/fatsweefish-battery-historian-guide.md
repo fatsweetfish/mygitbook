@@ -1,4 +1,4 @@
-## Our Battery-historian User Guide
+## Our Battery-Ｈistorian User Guide
 
 ### 说明
 

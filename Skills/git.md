@@ -102,8 +102,8 @@ git push -u origin master  把本地master代码提交到远程origin/master分�
 
 ```
 git fetch   已经有关联的可以用
-git fetch origin　　缓存远程仓库所有分支到本地
-git fetch origin dev 缓存远程dev分支到本地，存在本地临时分支origin/dev
+git fetch origin　　缓存远程仓库origin所有分支到本地
+git fetch origin dev 缓存远程origin的dev分支到本地，存在本地临时分支origin/dev
 ```
 
 
@@ -154,7 +154,7 @@ git push origin :dev　　　删除远程分支
 git push origin --delete dev  删除远程分支
 ```
 
-删除远程仓库
+**删除远程仓库**
 
 ```
 git remote rm paul
@@ -195,12 +195,6 @@ git rm -r --cached .   #主要这个点一定要写
 git branch -m oldname newname
 ```
 
-#### 远程仓库重命名
-
-```
-git remote rename pb paul
-```
-
 #### 远程操作
 
 <font color=red>**git remote **</font>
@@ -212,7 +206,8 @@ git fetch pb　缓存远程仓库pb到本地
 git remote show origin/pb 查看远程仓库的信息
 git remote rename pb paul 远程仓库重命名
 git remote rm paul　　删除远程仓库
-
+git remote rename pb paul 给远程分支重命名
+git remote set-url origin　git@github.com:fatsweetfish/mygitbook.git　给远程仓库换url
 ```
 
 #### git的tag功能
@@ -311,6 +306,8 @@ $ git checkout feature
 $ git rebase master
 ```
 
+
+
 ### 2.流程操作
 
 * **撤消修改**
@@ -327,17 +324,15 @@ $ git rebase master
     ```
     git reset HEAD filename
     git reset HEAD .　　放弃所有缓存的文件
-    ＃或者
-    git rm -r --cached .  千万不要用这个命令
     ```
-
+    
   * 已经commit
 
     ```
-    git reset --hard HEAD^ 回退到上一次的状态
+  git reset --hard HEAD^ 回退到上一次的状态
     git reset --hard commitid 回退到某一次的版本
     ```
-
+  
 * **新建一个仓库推送到远端**
 
   ```
