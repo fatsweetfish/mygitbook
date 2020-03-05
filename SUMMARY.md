@@ -10,4 +10,6 @@
     * [gitbook用法](MiscRecord/gitbook.md)
     * [vpn](MiscRecord/vpn.md)
     * [markdown](MiscRecord/markdown.md)
+    * [tiny skills](MiscRecord/tiny-skills.md)
+    * [github免密提交代码](MiscRecord/github_push_without_pwd.md)
 
